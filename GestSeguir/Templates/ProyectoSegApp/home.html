@@ -1,0 +1,49 @@
+{% extends "ProyectoSegApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'GestSeguir/img/principal.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">Seguimiento de Egresados y Empleadores</span>
+            <span class="section-heading-upper">Bienvenido al Programa de Seguimiento de Egresados y Empleadores de la 
+              Universidad Politecnica de Tapachula. Nos enorgullece ofrecer un servicio integral que 
+              conecta a nuestros egresados con empleadores destacados y brinda oportunidades de desarrollo 
+              profesional a lo largo de sus carreras.</span>
+          </h2>
+          <p class="mb-3">
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'GestSeguir/img/boltra.jpg' %}" alt="">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">¿Eres un egresado? Regístrate para obtener beneficios exclusivos: </span>
+                <span class="section-heading-upper">- Acceso a ofertas laborales seleccionadas específicamente para nuestros egresados.
+                  <br>- Participación en eventos y talleres de desarrollo profesional.
+                  <br>- Asesoramiento de carrera personalizado para ayudarte a alcanzar tus objetivos.</span>
+              </h2>
+              <p class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+ {% endblock %}

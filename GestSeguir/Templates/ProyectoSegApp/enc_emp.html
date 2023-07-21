@@ -1,0 +1,50 @@
+{% extends 'ProyectoSegApp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="{% url 'enc_emp' %}">
+    {% csrf_token %}
+
+    <div style="color: black;"> <!-- Establecer color negro -->
+        <h2>Preguntas para los empleadores</h2>
+        
+        <ol>
+            <li>
+                <p>¿Qué habilidades y competencias buscas en un candidato?</p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p>¿Qué experiencia previa valoras en los egresados?</p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p>¿Cuáles son los desafíos comunes que enfrentas al contratar egresados?</p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p>¿Qué consejos tienes para los egresados que buscan empleo en tu sector?</p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p>¿Cuál es el perfil de egresado que mejor se adapta a tu empresa?</p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p>¿Cuáles son las oportunidades de crecimiento y desarrollo profesional en tu empresa?</p>
+                <textarea></textarea>
+            </li>
+        </ol>
+    </div>
+</form>
+
+  </div>
+</div>
+
+        <button type="submit">Enviar Encuesta para Egresados</button>
+        <br>
+
+    </form>
+
+    {% endblock %}

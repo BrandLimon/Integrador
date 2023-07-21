@@ -1,0 +1,49 @@
+{% extends 'ProyectoSegApp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="{% url 'enc_egre' %}">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <div style="color: black;"> <!-- Establecer color negro -->
+        <h2>Preguntas para los egresados</h2>
+        
+        <ol>
+            <li>
+                <p><strong>¿Cuál fue tu experiencia durante la carrera?</strong></p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p><strong>¿Qué habilidades adquiriste durante tus estudios?</strong></p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p><strong>¿Cuál es tu campo de interés profesional?</strong></p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p><strong>¿Cuáles fueron tus principales logros académicos?</strong></p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p><strong>¿Cuál es tu objetivo profesional a corto y largo plazo?</strong></p>
+                <textarea></textarea>
+            </li>
+            <li>
+                <p><strong>¿Cómo te ves aplicando tus conocimientos en un entorno laboral?</strong></p>
+                <textarea></textarea>
+            </li>
+        </ol>
+    </div>
+</form>
+
+  </div>
+</div>
+
+        <button type="submit">Enviar Encuesta para Egresados</button>
+    </form>
+{% endblock %}
